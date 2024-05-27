@@ -1,0 +1,36 @@
+<div class="container container-fluid d-flex flex-column gap-3 p-0">
+    <% if(messages.length > 0){ %>
+        <% messages.forEach(message => { %>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><%= message.subject %></h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"><%= message.email %></h6>
+                  <p class="card-text"><%= message.message.length > 60 ? message.message.substring(0, 60) + '...' : message.message %></p>
+                  <a href="/admin/message/<%= message.id %>" class="btn btn-outline-primary">Details</a>
+                </div>
+            </div>
+        <% }) %>
+    <% }else{ %>
+        <h3>No message is sent...</h3>
+    <% } %>
+</div>
+<% if(pageNumbers){ %>
+    <div class="container container-sm d-flex gap-2 align-items-center justify-content-center mt-auto">
+    <% if(pageNumbers[0] !== 1){ %>
+        <a href="/admin/<%= activePage - 1 %>">Previous</a>
+    <% } %>
+
+    <% for(let i = 0; i < (pageNumbers.length === 6 ? 5 : pageNumbers.length); i++){ %>
+        <a href="/admin/<%= pageNumbers[i] %>" class="btn <%= pageNumbers[i] === activePage ? 'btn-primary' : 'btn-outline-primary' %>"><%= pageNumbers[i] %></a>
+    <% } %>
+
+    <% if(pageNumbers.length === 6 && pageNumbers[4] + 1 !== pageNumbers[5]){%>
+        <a href="/admin/<%= activePage + 1 %>">Next</a>
+        <p>......</p>
+    <% } %>
+
+    <% if(pageNumbers.length === 6){ %>
+        <a href="/admin/<%= pageNumbers[5] %>" class="btn btn-outline-primary"><%= pageNumbers[5] %></a>
+    <% } %>
+    </div>
+<% } %>

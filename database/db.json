@@ -1,0 +1,36 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "name": "Yusif",
+      "email": "yusif@mail.com",
+      "subject": "This is a cool course, not gonna lie",
+      "message": "I like this course a lot. It gave me good knowledge about this node stuff and how this works, but especially learning how to write anything from the scratch and actually understanding how everything works in a server was a coll experience. Thanks a lot!",
+      "createdAt": "2024/05/27 20-39-05",
+      "updatedAt": "2024/05/27 20-39-27"
+    }
+  ],
+  "portfolio": {
+    "facebook": "https://x.com/",
+    "twitter": "https://x.com/",
+    "pinterest": "https://www.pinterest.com/",
+    "instagram": "https://www.instagram.com/",
+    "slack": "https://slack.com/intl/en-gb/",
+    "skype": "https://www.skype.com/en/",
+    "name": "Mirza",
+    "email": "mirza@mirza.com",
+    "phone": "+994777777777",
+    "about": "aobut text here",
+    "twitterUsername": "mirzaCoder",
+    "clients": 123,
+    "projects": 25,
+    "awards": 47,
+    "yearsExperience": 6,
+    "address": "Azerbaijan, Absheron, Baku, Ahmedli, 182C, Next to the Playstation center",
+    "phone1": "+994779999999",
+    "phone2": "+994779999998",
+    "email1": "mirzaAdvertisement@ad.com",
+    "email2": "mirzaPayMeForProject@pay.com",
+    "facebookChat": "learnWithMirza"
+  }
+}

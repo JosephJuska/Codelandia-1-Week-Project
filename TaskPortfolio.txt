@@ -1,0 +1,68 @@
+Admin panel ejs ile yazilacaq
+portfolio olacaq
+Landing page webpack ile yazilacaq db.json istifadə
+
+Planning:
+Three Admin Main Pages => Messages, Portfolio Data Editor, Message Creation
+Messages Two Main Pages => See Messages(Pagination), Message Edit, Delete Page
+
+ROUTES:
+/
+messages/
+portfolio/
+admin/
+
+MESSAGES PATHS:
+default: GET, POST 
+default/<id>: GET, PUT, DELETE 
+default/page/<page>: GET 
+
+PORTFOLIO PATHS:
+default: GET, PUT
+
+/ PATHS:
+default: GET
+
+ADMIN PATHS:
+default: GET
+default/<page>: GET
+default/message/<id>: GET
+default/message/create: GET
+default/portfolio: GET
+
+DATABASE:
+message: {
+    name: string,
+    email: string(email),
+    subject: string,
+    message: string
+}
+
+portfolio: {
+    socials: {
+        facebook: string(url),
+        twitter: string(url),
+        pinterest: string(url),
+        instagram: string(url),
+        slack: string(url),
+        skype: string(url)
+    },
+    personal: {
+        name: string,
+        email: string(email),
+        phone: string,
+        about: string
+    },
+    statistics: {
+        clients: number,
+        projects: number,
+        awards: number,
+        yearsExperience: number
+    },
+    getInTouch: {
+        address: string,
+        phone: string,
+        email: string(email),
+        facebook: string
+    }
+}

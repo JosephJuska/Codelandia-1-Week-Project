@@ -1,0 +1,30 @@
+<div id="container" class="container container-fluid d-flex align-items-center justify-content-center flex-column gap-3 p-0 pt-2">
+    <form id="form" class="border border-1 border-dark rounded p-5">
+        <div class="row">
+            <div class="mb-3 col-sm">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                <div class="name-errors"></div>
+            </div>
+            <div class="mb-3 col-sm">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                <div class="email-errors"></div>
+            </div>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" aria-describedby="subjectHelp">
+          <div class="subject-errors"></div>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" style="height: 200px; resize: none" placeholder="Leave a message here..." id="message"></textarea>
+            <label for="message">Message</label>
+            <div class="message-errors"></div>
+        </div>
+        <button type="button" id="create" class="btn btn-outline-primary me-3">Create</button>
+    </form>
+    <div class="show-message">
+
+    </div>
+</div>

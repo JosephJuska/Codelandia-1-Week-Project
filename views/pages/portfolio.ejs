@@ -1,0 +1,138 @@
+<div id="container" class="container container-fluid d-flex align-items-center justify-content-center flex-column gap-3 p-0 pt-2">
+    <form id="form" class="border border-1 border-dark rounded p-5">
+        <h3>Socials</h3>
+        <div class="row">
+            <div class="mb-3 col-md">
+                <label for="facebook" class="form-label">Facebook</label>
+                <input type="text" value="<%= portfolio.facebook %>" class="form-control" id="facebook" name="facebook" aria-describedby="facebookHelp">
+                <div id="nameHelp" class="form-text"></div>
+                <div class="facebook-errors"></div>
+            </div>
+            <div class="mb-3 col-md">
+                <label for="twitter" class="form-label">Twitter</label>
+                <input type="text" value="<%= portfolio.twitter %>" class="form-control" id="twitter" name="twitter" aria-describedby="twitterHelp">
+                <div class="twitter-errors"></div>
+            </div>
+            <div class="mb-3 col-md">
+                <label for="pinterest" class="form-label">Pinterest</label>
+                <input type="text" value="<%= portfolio.pinterest %>" class="form-control" id="pinterest" name="pinterest" aria-describedby="pinterestHelp">
+                <div class="pinterest-errors"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md">
+                <label for="instagram" class="form-label">Instagram</label>
+                <input type="text" value="<%= portfolio.instagram %>" class="form-control" id="instagram" name="instagram" aria-describedby="instagramHelp">
+                <div class="instagram-errors"></div>
+            </div>
+            <div class="mb-3 col-md">
+                <label for="slack" class="form-label">Slack</label>
+                <input type="text" value="<%= portfolio.slack %>" class="form-control" id="slack" name="slack" aria-describedby="slackHelp">
+                <div class="slack-errors"></div>
+            </div>
+            <div class="mb-3 col-md">
+                <label for="skype" class="form-label">Skype</label>
+                <input type="text" value="<%= portfolio.skype %>" class="form-control" id="skype" name="skype" aria-describedby="skypeHelp">
+                <div class="skype-errors"></div>
+            </div>
+        </div>
+        <h3>About</h3>
+        <div class="row">
+            <div class="mb-3 col-md">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" value="<%= portfolio.name %>" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text"></div>
+                <div class="name-errors"></div>
+            </div>
+            <div class="mb-3 col-md">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" value="<%= portfolio.email %>" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                <div class="email-errors"></div>
+            </div>
+            <div class="mb-3 col-md">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" value="<%= portfolio.phone %>" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
+                <div class="phone-errors"></div>
+            </div>
+            <div class="mb-3 col-md">
+                <label for="twitter-username" class="form-label">Twitter Username</label>
+                <input type="text" value="<%= portfolio.twitterUsername %>" class="form-control" id="twitter-username" name="twitter-username" aria-describedby="twitterUsernameHelp">
+                <div class="twitter-username-errors"></div>
+            </div>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" style="height: 200px; resize: none" placeholder="Leave info about yourself..." id="about"><%= portfolio.about %></textarea>
+            <label for="about">About</label>
+            <div class="about-errors"></div>
+        </div>
+        <h3>Statistics</h3>
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="clients" class="form-label">Clients</label>
+                <input type="number" value="<%= portfolio.clients %>" class="form-control" id="clients" name="clients" aria-describedby="clientsHelp">
+                <div class="clients-errors"></div>
+            </div>
+            <div class="mb-3 col">
+                <label for="projects" class="form-label">Projects</label>
+                <input type="number" value="<%= portfolio.projects %>" class="form-control" id="projects" name="projects" aria-describedby="projectsHelp">
+                <div class="projects-errors"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="awards" class="form-label">Awards</label>
+                <input type="number" value="<%= portfolio.awards %>" class="form-control" id="awards" name="awards" aria-describedby="awardsHelp">
+                <div class="awards-errors"></div>
+            </div>
+            <div class="mb-3 col">
+                <label for="years-experience" class="form-label">Years Experience</label>
+                <input type="number" value="<%= portfolio.yearsExperience %>" class="form-control" id="years-experience" name="years-experience" aria-describedby="yearsExperienceHelp">
+                <div class="years-experience-errors"></div>
+            </div>
+        </div>
+        <h3>Contact</h3>
+        <div class="row">
+            <div class="mb-3 col-sm">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" value="<%= portfolio.address %>" class="form-control" id="address" name="address" aria-describedby="addressHelp">
+                <div id="addressHelp" class="form-text"></div>
+                <div class="address-errors"></div>
+            </div>
+            <div class="mb-3 col-sm">
+                <label for="facebookChat" class="form-label">Facebook Chat</label>
+                <input type="text" value="<%= portfolio.facebookChat %>" class="form-control" id="facebook-chat" name="facebook-chat" aria-describedby="facebookChatHelp">
+                <div class="facebook-chat-errors"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-sm">
+                <label for="phone1" class="form-label">Phone 1</label>
+                <input type="text" value="<%= portfolio.phone1 %>" class="form-control" id="phone1" name="phone1" aria-describedby="phone1Help">
+                <div id="phone1Help" class="form-text"></div>
+                <div class="phone1-errors"></div>
+            </div>
+            <div class="mb-3 col-sm">
+                <label for="phone2" class="form-label">Phone 2</label>
+                <input type="text" value="<%= portfolio.phone2 %>" class="form-control" id="phone2" name="phone2" aria-describedby="phone2Help">
+                <div class="phone2-errors"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-sm">
+                <label for="email1" class="form-label">Email 1</label>
+                <input type="email" value="<%= portfolio.email1 %>" class="form-control" id="email1" name="email1" aria-describedby="email1Help">
+                <div id="email1Help" class="form-text"></div>
+                <div class="email1-errors"></div>
+            </div>
+            <div class="mb-3 col-sm">
+                <label for="email2" class="form-label">Email 2</label>
+                <input type="email" value="<%= portfolio.email2 %>" class="form-control" id="email2" name="email2" aria-describedby="email2Help">
+                <div class="email2-errors"></div>
+            </div>
+        </div>
+        <button type="button" id="edit" class="btn btn-outline-primary me-3">Edit</button>
+    </form>
+    <div class="show-message">
+
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <% if(styleSheets){ %>
+        <% for(const style of styleSheets){ %>
+            <link rel="stylesheet" href="<%= style %>">
+        <% } %>
+    <% } %>
+    <link rel="stylesheet" href="/default/bootstrap.min.css">
+</head>
+<body>
+    <div class="container container-fluid d-flex flex-column align-items-center h-100 min-vh-100">
+        <div class="sticky-top bg-dark p-3 container-flex w-100 d-flex gap-3 align-items-center justify-content-start rounded-bottom">
+            <a href="/admin/" class="btn <%= (activePage === 'messages' ? 'btn-primary' : 'btn-outline-primary') %>">Messages</a>
+            <a href="/admin/portfolio" class="btn <%= (activePage === 'portfolio' ? 'btn-primary' : 'btn-outline-primary') %>">Portfolio</a>
+            <a href="/admin/message/create" class="btn <%= (activePage === 'create' ? 'btn-primary' : 'btn-outline-primary') %> ms-auto">Create Message</a>
+        </div>
+        <div class="position-relative container container-md d-flex flex-column align-items-center gap-3 p-0 pt-3 pb-3 flex-grow-1">
