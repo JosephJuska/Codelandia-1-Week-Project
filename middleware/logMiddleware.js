@@ -6,6 +6,10 @@ const bodyParser = require('../utils/bodyParser');
 
 const logDir = getRootPath() + 'logs';
 
+if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir, { recursive: true });
+}
+
 const staticMiddleware = async (req) => {
     const currentDate = getCurrentDate();
     const logFilePath = `${logDir}/${currentDate}.txt`;
